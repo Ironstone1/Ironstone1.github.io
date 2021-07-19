@@ -74,7 +74,7 @@ class find_largest():
                                             self.search_results.append(p)
                                             
                             except Exception as error:
-                                self.print_log(f"[-] Error thrown when process file! {error}!")
+                                pass#self.print_log(f"[-] Error thrown when process file! {error}!")
                         self.paths[path] = sum(sub_files)
 
                 # process sub folders
@@ -88,7 +88,7 @@ class find_largest():
                                 sub_folder_size += os.path.getsize(p)
                                 self.update_fps()
                             except Exception as error:
-                                self.print_log(f"[-] Error thrown when process file! {error}!")
+                                pass#self.print_log(f"[-] Error thrown when process file! {error}!")
                         if self.dir_first_run == True:
                             self.total_dir_count += len(sub_dir)
 
